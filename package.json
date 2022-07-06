@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "test",
-    "dev-start": "babel-node ./server.js"
+    "dev-start": "babel-node ./server.js",
+    "start": "babel-node ./server.js"
 
   },
   "repository": {
@@ -18,6 +19,7 @@
     "url": "https://github.com/Nicole-Mbera/Umulinga-backend/issues"
   },
   "homepage": "https://github.com/Nicole-Mbera/Umulinga-backend#readme",
+  
   "dependencies": {
     "babel-core": "^6.26.3",
     "body-parser": "^1.20.0",
