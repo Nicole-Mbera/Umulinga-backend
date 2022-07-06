@@ -4,7 +4,11 @@ import mongoose from "mongoose";
 
 const productSchema = new mongoose.Schema(
     {
-        productPicture: String,
+        productPicture: [
+            {type: String}
+        ],
+      read:{type: String, default: 'no'},
+      like:{ type: Number, default: 0 },
         name: String,
         description: String,
         price: Number,

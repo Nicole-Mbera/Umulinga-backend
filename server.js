@@ -1,4 +1,4 @@
-import express from "express";
+import express  from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
@@ -22,8 +22,9 @@ mongoose
   .connect(databaseUrl, {useNewUrlParser:true, useUnifiedTopology:true,})
   .then(() => console.log("database conected successfully"));
 
-app.listen( 7000,()=>{
-    console.log('server is running on port 7000')
+  const port = process.env.PORT;
+app.listen( port,()=>{
+    console.log(`server is running on port  ${port}`)
 })
 
 export default app;
