@@ -7,7 +7,6 @@
     "test": "test",
     "dev-start": "babel-node ./server.js",
     "start": "babel-node ./server.js"
-
   },
   "repository": {
     "type": "git",
@@ -19,11 +18,7 @@
     "url": "https://github.com/Nicole-Mbera/Umulinga-backend/issues"
   },
   "homepage": "https://github.com/Nicole-Mbera/Umulinga-backend#readme",
-  
   "dependencies": {
-    "babel-core": "^6.26.3",
-    "body-parser": "^1.20.0",
-    "express": "^4.18.1",
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.12.10",
     "@babel/node": "^7.0.0",
@@ -32,8 +27,12 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/register": "^7.12.10",
     "@types/node": "^14.14.22",
+    "babel-core": "^6.26.3",
     "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
+    "express": "^4.18.1",
     "express-validator": "^6.14.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.0",
