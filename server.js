@@ -3,14 +3,16 @@ import express  from "express";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import userRouter from "./Server/routes/userRoutes"
-import productRouter from "./Server/routes/productRoute"
+import productRouter from "./Server/routes/productRoute";
+import cors from 'cors';
 
 dotenv.config ("./.env");
 const app = express();
+app.use(cors());
 
 app.use(bodyParser.json());
 app.use("/user",userRouter);
-app.use("/product", productRouter)
+app.use("/product", productRouter);
 app.use("/",(req,res)=> res.status(200).json({
   message: "This is  APi does not exist"
 

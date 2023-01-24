@@ -5,14 +5,14 @@ import mongoose from "mongoose";
 const productSchema = new mongoose.Schema(
     {
         productPicture: [
-            {type: String}
+            { type: String }
         ],
-      read:{type: String, default: 'no'},
-      like:{ type: Number, default: 0 },
+        read: { type: String, default: 'no' },
+        like: { type: Number, default: 0 },
         name: String,
         description: String,
         price: Number,
-        
+
     },
     {
         timestamps: true,
@@ -20,7 +20,7 @@ const productSchema = new mongoose.Schema(
 
 
 );
-    
+
 const Product = mongoose.model("Product", productSchema);
 
 export default Product;
