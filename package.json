@@ -5,9 +5,12 @@
   "main": "server.js",
   "scripts": {
     "test": "test",
-    "dev-start": "babel-node ./server.js",
-    "start": "babel-node ./server.js"
+    "dev-start": "node ./server.js",
+    "start": " ./server.js"
   },
+
+"type":"module",
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nicole-Mbera/Umulinga-backend.git"

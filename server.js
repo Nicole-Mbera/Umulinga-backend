@@ -2,8 +2,9 @@ import mongoose from "mongoose";
 import express  from "express";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
-import userRouter from "./Server/routes/userRoutes"
-import productRouter from "./Server/routes/productRoute";
+import userRouter from "./Server/routes/userRoutes.js";
+import productRouter from "./Server/routes/productRoute.js";
+import bestSellersRouter from "./Server/routes/bestSellersRoutes.js";
 import cors from 'cors';
 
 dotenv.config ("./.env");
@@ -13,6 +14,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use("/user",userRouter);
 app.use("/product", productRouter);
+app.use("/Sellers", bestSellersRouter );
 app.use("/",(req,res)=> res.status(200).json({
   message: "This is  APi does not exist"
 
