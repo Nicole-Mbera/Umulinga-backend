@@ -6,11 +6,10 @@
   "scripts": {
     "test": "test",
     "dev-start": "node ./server.js",
-    "start": " ./server.js"
+    "start": "node ./server.js"
   },
-
-"type":"module",
-
+  "type": "module",
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nicole-Mbera/Umulinga-backend.git"
