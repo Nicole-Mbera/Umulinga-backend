@@ -1,8 +1,7 @@
-
 import mongoose from "mongoose";
 
-
 const productSchema = new mongoose.Schema(
+
     {
         productPicture: [
             { type: String }
@@ -17,6 +16,7 @@ const productSchema = new mongoose.Schema(
     {
         timestamps: true,
     }
+
 
 
 );
