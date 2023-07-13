@@ -5,8 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "test",
+
     "dev-start": "node ./server.js",
     "start": " ./server.js"
+
   },
 
 "type":"module",
