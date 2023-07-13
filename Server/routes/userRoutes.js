@@ -1,7 +1,7 @@
 import express from "express";
-import UserController from "../controllers/userController";
-import Validator from "../middlewares/validator";
-import DataChecker from "../middlewares/dataChecker"
+import UserController from "../controllers/userController.js";
+import Validator from "../middlewares/validator.js";
+import DataChecker from "../middlewares/dataChecker.js"
 
 const userRouter = express.Router();
 

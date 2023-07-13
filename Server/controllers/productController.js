@@ -1,4 +1,4 @@
-import productInfo from "../model/product";
+import productInfo from "../model/product.js";
 
 
 class productController {

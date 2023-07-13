@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
-const productSchema = new mongoose.Schema(
 
+const bestSellersSchema = new mongoose.Schema(
     {
         productPicture: [
             { type: String }
@@ -18,9 +18,8 @@ const productSchema = new mongoose.Schema(
     }
 
 
-
 );
 
-const Product = mongoose.model("Product", productSchema);
+const bestSellers= mongoose.model("bestSellers", bestSellersSchema);
 
-export default Product;
+export default bestSellers;
