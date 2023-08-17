@@ -5,6 +5,7 @@ import bodyParser from "body-parser";
 import userRouter from "./Server/routes/userRoutes.js";
 import productRouter from "./Server/routes/productRoute.js";
 import bestSellersRouter from "./Server/routes/bestSellersRoutes.js";
+import messageRouter from "./Server/routes/messageRouter.js";
 import cors from 'cors';
 
 dotenv.config ("./.env");
@@ -15,6 +16,8 @@ app.use(bodyParser.json());
 app.use("/user",userRouter);
 app.use("/product", productRouter);
 app.use("/Sellers", bestSellersRouter );
+app.use("/message", messageRouter);
+
 app.use("/",(req,res)=> res.status(200).json({
   message: "This is  APi does not exist"
 
